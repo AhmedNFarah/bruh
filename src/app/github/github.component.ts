@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {GithubFormComponent} from '../github-form/github-form.component';
 import {GithubService} from '../github.service';
 
 @Component({
