@@ -1,6 +1,8 @@
 import {Component} from '@angular/core';
 import {GithubFormComponent} from '../github-form/github-form.component';
 import {GithubService} from '../github.service';
+import { Users } from '../users';
+import { Github } from '../github';
 
 @Component({
   selector: 'app-github',
@@ -8,13 +10,13 @@ import {GithubService} from '../github.service';
   styleUrls: ['./github.component.css']
 })
 export class GithubComponent {
-  user: any;
-  repos: any;
+  user: Users;
+  repos: Github;
   username: string;
 
 
   constructor(private _githubService: GithubService) {
-    this.user = false;
+
   }
 
   searchUser() {
@@ -30,4 +32,5 @@ export class GithubComponent {
         this.repos = repos;
       });
   }
+
 }
