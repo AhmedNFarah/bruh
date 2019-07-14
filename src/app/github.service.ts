@@ -6,8 +6,8 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 @Injectable()
 export class GithubService {
   private username: string;
-  private client_id = 'b1b8df32b10c51993119';
-  private client_secret = '241aeea65e618775eae9ea2d24a9fb03fa6861a3';
+  private client_id = '7dd8f7ffa896f2860405';
+  private client_secret = '4c5ea1f5e32408249fa05495d6bf3528a136587d';
 
   constructor(private _http: HttpClient) {
     console.log('github service ready...');
